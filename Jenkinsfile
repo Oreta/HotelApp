@@ -11,10 +11,5 @@ pipeline {
         echo 'I TRY TO COMMUNICATE'
       }
     }
-    stage('rep') {
-      steps {
-        sh './jenkins/scripts/deliver.sh'
-      }
-    }
   }
 }
