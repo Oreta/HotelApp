@@ -6,5 +6,15 @@ pipeline {
         sh 'mvn package'
       }
     }
+    stage('Report') {
+      steps {
+        echo 'I TRY TO COMMUNICATE'
+      }
+    }
+    stage('rep') {
+      steps {
+        sh './jenkins/scripts/deliver.sh'
+      }
+    }
   }
 }
