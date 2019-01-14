@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'make'
-        sh 'make check'
+        sh 'mvn package'
       }
     }
   }
